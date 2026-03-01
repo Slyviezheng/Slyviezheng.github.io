@@ -7,19 +7,25 @@ a { text-decoration: none; }
 .container { display: flex; align-items: flex-start; max-width: 1000px; margin: 40px auto; padding: 0 20px; } 
 .sidebar { width: 260px; padding-right: 30px; } 
 .main { flex: 1; display: block;} 
+.avatar { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; display: block; margin-bottom: 16px; }
+.sidebar-top { display: block; }
+.sidebar-text { display: block; }
+.pub-img { width: 100%; height: auto; border-radius: 0; object-fit: contain; display: block; margin: 12px 0; }
 .profile-pic { width: 180px; border-radius: 50%; margin-bottom: 16px; display: block; } 
 .name { margin: 0 0 6px 0; } 
 .role { margin: 0 0 12px 0; } 
 .contact { margin: 0 0 6px 0; } 
-@media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; padding-right: 0; margin-bottom: 24px; } .profile-pic { width: 140px; }} 
+@media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; padding-right: 0; margin-bottom: 24px; } .profile-pic { width: 140px; } .sidebar-top { display: flex; gap: 16px; align-items: center; } .avatar { width: 96px; height: 96px; margin-bottom: 0; }} 
 hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-size: 20px; letter-spacing: 1px; margin-bottom: 15px; }
 </style></head>
 
-<body> <div class="container"> <div class="sidebar"> 
-    <img src="me.jpg" class="profile-pic" alt="Xiaoyu Zheng"> 
-    <h1 class="name">Xiaoyu Zheng</h1> 
+<body> 
+<div class="sidebar-top">
+    <img src="me.jpg" class="avatar" alt="Xiaoyu Zheng"> 
+<div class="sidebar-text">
+    <h1 class="name">Xiaoyu Zheng(郑晓宇)</h1> 
     <p class="role">MSc Digital Systems Design, University of Southampton</p> 
-    <p class="contact"><a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p> <p class="contact"> </p> </div>
+    <p class="contact"><a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p></div></div></div>
     
 <div class="main"><section>
 <p> I am currently pursuing an <strong>MSc in Digital Systems Design at the School of Electronics and Computer Science (ECS), University of Southampton. </strong>
@@ -45,7 +51,7 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-si
 
 <hr><section><h2>PUBLICATIONS</h2> 
 <p> A Unified Function Processor with Integer Arithmetic Based on Piecewise Chebyshev Polynomial Approximation
-<img src="iscas.png" class="profile-pic" alt="Xiaoyu Zheng"> X. Zheng*, Z. Guo*, et al. IEEE International Symposium on Circuits and Systems (ISCAS) (Accepted).</p></section>
+<img src="iscas.png" class="profile-img" alt="Xiaoyu Zheng"> X. Zheng*, Z. Guo*, et al. IEEE International Symposium on Circuits and Systems (ISCAS) (Accepted).</p></section>
      
 <hr><section><h2>PROJECTS</h2> 
 <p><strong>A Unified Function Processor with Integer Arithmetic Based on Piecewise Chebyshev Polynomial Approximation</strong><br> Team Leader  &nbsp;&nbsp; | &nbsp;&nbsp; 07/2025 -Present </p> 
@@ -53,7 +59,6 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-si
     <li>Built a configurable Python toolchain for design-space exploration and error-resource trade-off analysis.</li>
     <li>Designed and implemented internal compute modules of the NPU at RTL level.</li> </ul>
 
-<hr><section><h2>PROJECTS</h2> 
 <p><strong>Volans LLM Chip</strong><br> NPU Subsystem Microarchitecture Designer and Developer &nbsp;&nbsp; | &nbsp;&nbsp; Feb 2026-Present</p> 
 <ul><li>Implemented the microarchitecture of a research-oriented large language model (LLM) accelerator.</li> 
     <li>Designed an 8-stage AXI-Stream-based streaming datapath with stage-level functional partitioning.</li>
