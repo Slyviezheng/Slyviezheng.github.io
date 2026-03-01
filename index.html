@@ -14,10 +14,12 @@ a { text-decoration: none; }
 .name { margin: 0 0 6px 0; } 
 .role { margin: 0 0 12px 0; } 
 .contact { margin: 0 0 6px 0; } 
-.icon-link {display: flex;align-items: center;gap: 10px;margin: 8px 0;color: #333;}
+.icon-link {display: flex;align-items: center;gap: 10px;margin: 8px 0; color: #333;}
 .icon-link img {width: 18px;height: 18px;}
 .icon-link:hover {color: #0073e6;}
 .icon-link svg {width: 20px;height: 20px;flex-shrink: 0;}
+.img-wrapper {position: relative;display: inline-block;}
+.img-tag {position: absolute;top: 12px;left: 12px;background: #0a3d91; color: white;padding: 6px 14px;font-size: 14px;font-weight: 600;}
 @media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; padding-right: 0; margin-bottom: 24px; } .profile-pic { width: 140px; } .sidebar-top { display: flex; gap: 16px; align-items: center; } .avatar { width: 96px; height: 96px; margin-bottom: 0; }} 
 hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-size: 20px; letter-spacing: 1px; margin-bottom: 15px; }
 </style></head>
@@ -58,7 +60,9 @@ outhampton
 
 <hr><section><h2>PUBLICATIONS</h2> 
 <p><em> A Unified Function Processor with Integer Arithmetic Based on Piecewise Chebyshev Polynomial Approximation
-<img src="iscas.png" class="pub-img" alt="Xiaoyu Zheng"> X. Zheng*, Z. Guo*, et al. IEEE International Symposium on Circuits and Systems (ISCAS) (Accepted).</em></p></section>
+<p>X. Zheng*, Z. Guo*, et al. </p>
+<p>IEEE International Symposium on Circuits and Systems (ISCAS) (Accepted) </p>
+<div class="img-wrapper"><img src="iscas.png" class="pub-img" alt="ISCAS paper"><div class="img-tag">ISCAS 2026</div> </div></em></p></section>
      
 <hr><section><h2>RESEARCH EXPERIENCES</h2> 
 <p><strong>Voxel-based Point Cloud Processing for Hardware Acceleration </strong><br> Team Leader  &nbsp;&nbsp; | &nbsp;&nbsp; 09/2024-Present </p> 
@@ -83,8 +87,9 @@ outhampton
 
 <hr><section><h2>Skills</h2><ul>
 <li>Programming: Verilog, SystemVerilog, C, Python
-<li>Digital ASIC Implementation: Full RTL-to-GDSII flow; Synopsys DC/DFT, Cadence Xcelium/Innovus/Virtuoso; AMS 0.35µm/TSMC 180nm PDK; SDC constraints; post-layout simulation</li>
+<li>Digital ASIC Implementation: Basic Full RTL-to-GDSII flow; Synopsys DC/DFT, Cadence Xcelium/Innovus/Virtuoso; AMS 0.35µm/TSMC 180nm PDK; SDC constraints; post-layout simulation</li>
 <li>FPGA & Simulation: Quartus, ModelSim, MATLAB</li>
 <li>PCB / Embedded: Altium Designer</li></ul></section>
+<li>Language: English(IELTS 6.5), Chinese(Native)</li>
 
 </div></div></body></html>
