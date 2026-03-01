@@ -14,18 +14,25 @@ a { text-decoration: none; }
 .name { margin: 0 0 6px 0; } 
 .role { margin: 0 0 12px 0; } 
 .contact { margin: 0 0 6px 0; } 
+.icon-link {display: flex;align-items: center;gap: 10px;margin: 8px 0;color: #333;}
+.icon-link img {width: 18px;height: 18px;}
+.icon-link:hover {color: #0073e6;}
 @media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; padding-right: 0; margin-bottom: 24px; } .profile-pic { width: 140px; } .sidebar-top { display: flex; gap: 16px; align-items: center; } .avatar { width: 96px; height: 96px; margin-bottom: 0; }} 
 hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-size: 20px; letter-spacing: 1px; margin-bottom: 15px; }
 </style></head>
-
+outhampton
 <body> <div class="container"><div class="sidebar">
 <div class="sidebar-top">
     <img src="me.jpg" class="avatar" alt="Xiaoyu Zheng"> 
 <div class="sidebar-text">
     <h1 class="name">Xiaoyu Zheng(郑晓宇)</h1> 
     <p class="role">University of Southampton</p> 
-    <p class="contact"><a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p></div></div></div>
-    
+    <p class="role">Postgraduate researcher in AI chips</p>
+    <a class="icon-link" href="https://maps.google.com/?q=Southampton,UK" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg><span>Southampton,UK</span> </a> 
+    <a class="icon-link" href="mailto:xz12n25@soton.ac.uk"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg><span>Email</span> </a> 
+    <a class="icon-link" href="https://github.com/Slyviezheng" target="_blank"> <img src="github.svg" alt=""> <span>GitHub</span> </a> 
+</div></div></div>
+
 <div class="main"><section>
 <p> I am currently pursuing an <strong>MSc in Digital Systems Design at the School of Electronics and Computer Science (ECS), University of Southampton. </strong>
     My master project focuses on the design and implementation of neural networks on physical neural networks (PNN) or physics-inspired engines, 
