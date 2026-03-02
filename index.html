@@ -19,7 +19,7 @@ a { text-decoration: none; }
 .icon-link:hover {color: #0073e6;}
 .icon-link svg {width: 20px;height: 20px;flex-shrink: 0;}
 .img-wrapper {position: relative;display: inline-block;}
-.img-tag {position: absolute;top: -6px;left: -6px;background: #0a3d91; color: white;padding: 4px 14px;font-size: 12px;font-weight: 500;}
+.img-tag {position: absolute;top: 12px;left: -6px;background: #0a3d91; color: white;padding: 4px 12px;font-size: 12px;font-weight: 500;}
 .pub-item{display:flex;gap:24px;align-items:flex-start}
 .pub-text{flex:1}
 .pub-title{margin:0 0 6px 0}
@@ -37,13 +37,26 @@ a { text-decoration: none; }
 .proj-date{white-space:nowrap;}
 .proj-item{padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid #eee;}
 .proj-item:last-child{border-bottom:none;}
+.top-nav{position:sticky;top:0;background:white;padding:18px 0;display:flex;justify-content:center;gap:60px;border-bottom:1px solid #eee;z-index:100;}
+.top-nav a{text-decoration:none;font-size:22px;color:#666;}
+.top-nav a:hover
 .underline {text-decoration: underline;}
 li {margin-bottom: 1px;}
 @media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; padding-right: 0; margin-bottom: 24px; } .sidebar-top { display: flex; gap: 16px; align-items: center; } .avatar { width: 96px; height: 96px; margin-bottom: 0; }} 
 hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-size: 20px; margin-bottom: 15px; }
 </style></head>
 
-<body> <div class="container"><div class="sidebar">
+<body> 
+<nav class="top-nav"> 
+    <a href="#About Me">About Me</a> 
+    <a href="#Education">Education</a> 
+    <a href="#Publications">Publications</a> 
+    <a href="#Research Experiences">Research Experiences</a> 
+    <a href="#Projects">Projects</a> 
+    <a href="#Skills">Skills</a> 
+</nav>
+
+<div class="container"><div class="sidebar">
 <div class="sidebar-top">
     <img src="me.jpg" class="avatar" alt="Xiaoyu Zheng"> 
 <div class="sidebar-text">
@@ -55,7 +68,7 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-si
     <a class="icon-link" href="https://github.com/Slyviezheng" target="_blank"> <img src="github.svg" alt=""> <span>GitHub</span> </a> 
 </div></div></div>
 
-<div class="main"><section>
+<div class="main"><section id="About Me">
 <p> I am currently pursuing an <strong>MSc in Digital Systems Design at the School of Electronics and Computer Science (ECS), University of Southampton</strong>. My research focuses on <strong>AI accelerator architecture and RTL design</strong>, driven by cross-layer optimization from algorithms and systems.</p> 
 <p> Since Winter 2024, I have been <strong>collaborating remotely on AI chip research and tape-out with <span class="underline"><a href="https://changchun-zhou.github.io/" target="_blank">Dr. Changchun Zhou</a></span>.</strong></p>         
 <p> I received my <strong>BEng in Microelectronics Science and Engineering from Harbin Institute of Technology</strong> in June 2025. </p>
@@ -70,14 +83,14 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-si
 <p>Further details can be found in my <a href="#"><span class="underline">CV</span></a>. </p>
 <p><span style="color:red;"><strong>I am currently seeking PhD opportunities for Fall 2026 and Fall 2027.</strong></span></p></section>
 
-<hr><section><h2>Education</h2> 
+<hr><section id="Education"><h2>Education</h2> 
 <div class="edu-item"> <div class="edu-head"> <div class="edu-school">University of Southampton, UK</div> <div class="edu-date">Sep 2025-Sep 2026 (expected)</div> </div> 
     <p class="edu-degree">MSc Digital Systems Design</p> <p class="edu-meta">School of Electronics and Computer Science (ECS)</p> </div> 
 <div class="edu-item"> <div class="edu-head"> <div class="edu-school">Harbin Institute of Technology, China</div> <div class="edu-date">Aug 2021-Jun 2025</div> </div> 
     <p class="edu-degree">BEng Microelectronics Science and Engineering</p> <p class="edu-meta">School of Astronautics</p> </div> 
 </section>
 
-<hr><section><h2>Publications</h2> 
+<hr><section id="Publications"><h2>Publications</h2> 
 <div class="pub-item"><div class="img-wrapper"><img src="iscas.png" class="pub-img" alt="ISCAS paper"><div class="img-tag">ISCAS 2026</div> </div>
 <div class="pub-text">
     <p class="pub-title"><em>A Unified Function Processor with Integer Arithmetic Based on Piecewise Chebyshev Polynomial Approximation</em></p>
@@ -86,13 +99,13 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-si
     <details class="pub-abs"><summary>Abstract</summary><p>Nonlinear functions are fundamental components in widely applied AI algorithms. However, their hardware implementation presents a major challenge due to the diversity of function types and the full precision requirement (e.g., FP32), which results in significant area and energy overheads. To overcome these issues, we present a Unified Function Processor (UFP) with integer arithmetic, capable of efficiently computing a wide range of nonlinear functions with high accuracy under integer constraints. First, we propose a dynamic programming segmentation algorithm within a third-degree Chebyshev polynomial framework that optimally partitions each function into eight integer-aligned segments to minimize global quantization error. Second, a unified three-stage pipelined hardware with computation element reuse is proposed. Implemented in TSMC 28-nm HPC technology and working at 1GHz, the proposed UFP achieves up to 93.6% reductions in area compared to the state-of-the-art works, with a 79% lower energy consumption. The architecture flexibly supports all mainstream functions in AI algorithms with configurable precision and range, offering a compact and scalable solution for AI acceleration hardware.</p></details></div></div>
 </section>
 
-<hr><section><h2>Research Experiences</h2>
+<hr><section id="Research Experiences"><h2>Research Experiences</h2>
 <div class="proj-item"><div class="proj-header"><div><strong>Voxel-based Point Cloud Processing for Hardware Acceleration </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 09/2024-Present </div> </div>
 <ul><li>Designed a point cloud sampling and neighbor-search algorithm based on voxel partitioning, replacing traditional FPS/KNN distance calculations with voxel index lookups.</li> 
     <li>Reduced explicit distance computations by leveraging voxel index mapping.</li></ul></div>
 </section>
 
-<hr><section><h2>Projects</h2> 
+<hr><section id="Projects"><h2>Projects</h2> 
 <div class="proj-item"><div class="proj-header"><div><strong>Volans LLM Chip</strong><br> NPU Subsystem Microarchitecture Co-designer and Developer &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date">Feb 2026-Present </div> </div>
 <ul><li>Co-designed the microarchitecture of a research-oriented LLM accelerator with stage-level functional partitioning and implementing modules at RTL level.</li> </ul></div>
 
@@ -103,7 +116,7 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-si
 <ul><li>Developed a dynamic audio-responsive lighting control system based on feature extraction and adaptive control algorithms base on Modbus protocol, ADC acquisition, and RS485 communication on STM32 platform. Deployed in the 2025 Harbin Ice and Snow World.</li> </ul></div>
 </section>
 
-<hr><section><h2>Skills</h2><ul>
+<hr><section id="Skills"><h2>Skills</h2><ul>
 <li><strong>Programming</strong>: Verilog, SystemVerilog, C, Python</li>
 <li><strong>Digital ASIC Implementation</strong>: Basic Full RTL-to-GDSII flow; Synopsys DC/DFT, Cadence Xcelium/Innovus/Virtuoso; AMS 0.35µm/TSMC 180nm PDK; SDC constraints; post-layout simulation</li>
 <li><strong>FPGA & Simulation</strong>: Quartus, ModelSim, MATLAB</li>
