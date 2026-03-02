@@ -5,7 +5,7 @@
 <style> body { font-family: Arial; margin: 0; line-height: 1.6; } 
 a { text-decoration: none; } 
 .container { display: flex; align-items: flex-start; max-width: 1800px; margin: 40px auto; padding: 0 20px; } 
-.sidebar { width: 250px; padding-right: 100px; } 
+.sidebar { width: 250px; padding-right: 80px; } 
 .main { flex: 1; display: block;} 
 .avatar { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; object-position: center top; display: block; margin-bottom: 16px; }
 .sidebar-top { display: block; }
@@ -19,7 +19,7 @@ a { text-decoration: none; }
 .icon-link:hover {color: #0073e6;}
 .icon-link svg {width: 20px;height: 20px;flex-shrink: 0;}
 .img-wrapper {position: relative;display: inline-block;}
-.img-tag {position: absolute;top: 12px;left: -4px;background: #0a3d91; color: white;padding: 4px 14px;font-size: 14px;font-weight: 600;}
+.img-tag {position: absolute;top: -6px;left: -6px;background: #0a3d91; color: white;padding: 4px 14px;font-size: 12px;font-weight: 500;}
 .pub-item{display:flex;gap:24px;align-items:flex-start}
 .pub-text{flex:1}
 .pub-title{margin:0 0 6px 0}
@@ -35,6 +35,8 @@ a { text-decoration: none; }
 .edu-item:last-child {border-bottom: none;}
 .proj-header{display:flex;justify-content:space-between;align-items:flex-start;}
 .proj-date{white-space:nowrap;}
+.proj-item{padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid #eee;}
+.proj-item:last-child{border-bottom:none;}
 .underline {text-decoration: underline;}
 li {margin-bottom: 1px;}
 @media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; padding-right: 0; margin-bottom: 24px; } .sidebar-top { display: flex; gap: 16px; align-items: center; } .avatar { width: 96px; height: 96px; margin-bottom: 0; }} 
@@ -86,28 +88,28 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 40px 0; } h2 { font-si
 </section>
 
 <hr><section><h2>Research Experiences</h2>
-<div class="proj-header"><div><strong>Voxel-based Point Cloud Processing for Hardware Acceleration </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 09/2024-Present </div> </div>
+<div class="proj-item"></div><div class="proj-header"><div><strong>Voxel-based Point Cloud Processing for Hardware Acceleration </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 09/2024-Present </div> </div>
 <ul><li>Designed a point cloud sampling and neighbor-search algorithm based on voxel partitioning, replacing traditional FPS/KNN distance calculations with voxel index lookups.</li> 
-    <li>Reduced explicit distance computations by leveraging voxel index mapping.</li></ul>
+    <li>Reduced explicit distance computations by leveraging voxel index mapping.</li></ul></div>
 </section>
 
 <hr><section><h2>Projects</h2> 
-<div class="proj-header"><div><strong>Volans LLM Chip</strong><br> NPU Subsystem Microarchitecture Co-designer and Developer &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date">Feb 2026-Present </div> </div>
-<ul><li>Co-designed the microarchitecture of a research-oriented LLM accelerator with stage-level functional partition and implemention at RTL level.</li> </ul>
+<div class="proj-item"></div><div class="proj-header"><div><strong>Volans LLM Chip</strong><br> NPU Subsystem Microarchitecture Co-designer and Developer &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date">Feb 2026-Present </div> </div>
+<ul><li>Co-designed the microarchitecture of a research-oriented LLM accelerator with stage-level functional partitioning and implementing modules at RTL level.</li> </ul></div>
 
-<div class="proj-header"><div><strong>Fornax Diffusion Chip</strong><br> OCI Module Developer, UFP Module Co-developer &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date">12/2025-Present </div> </div>
-<ul><li>Designed the OCI (Output reversely compresses input) module, including control path, micro-architecture design, and RTL implementation, covering AXI transactions, address generation, data reorganization and scheduling. Completed module-level simulation and functional verification, and finally integrated it to SoC.</li> </ul>
+<div class="proj-item"></div><div class="proj-header"><div><strong>Fornax Diffusion Chip</strong><br> OCI Module Developer, UFP Module Co-developer &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date">12/2025-Present </div> </div>
+<ul><li>Designed the OCI (Output reversely compresses input) module, including control path, micro-architecture design, and RTL implementation, covering AXI transactions, address generation, data reorganization and scheduling. Completed module-level simulation and functional verification, and finally integrated it to SoC.</li> </ul></div>
 
-<div class="proj-header"><div><strong>Intelligent Control and Application of Landscape Lighting in Complex Environments  </strong><br> Team Member of Controller Part </div> <div class="proj-date">10/2024-06/2025</div></div>
-<ul><li>Developed a dynamic audio-responsive lighting control system based on feature extraction and adaptive control algorithms base on Modbus protocol, ADC acquisition, and RS485 communication on STM32 platform. Deployed in the 2025 Harbin Ice and Snow World.</li> </ul>
+<div class="proj-item"></div><div class="proj-header"><div><strong>Intelligent Control and Application of Landscape Lighting in Complex Environments  </strong><br> Team Member of Controller Part </div> <div class="proj-date">10/2024-06/2025</div></div>
+<ul><li>Developed a dynamic audio-responsive lighting control system based on feature extraction and adaptive control algorithms base on Modbus protocol, ADC acquisition, and RS485 communication on STM32 platform. Deployed in the 2025 Harbin Ice and Snow World.</li> </ul></div>
 </section>
 
 <hr><section><h2>Skills</h2><ul>
-<li>Programming: Verilog, SystemVerilog, C, Python
-<li>Digital ASIC Implementation: Basic Full RTL-to-GDSII flow; Synopsys DC/DFT, Cadence Xcelium/Innovus/Virtuoso; AMS 0.35µm/TSMC 180nm PDK; SDC constraints; post-layout simulation</li>
-<li>FPGA & Simulation: Quartus, ModelSim, MATLAB</li>
-<li>PCB / Embedded: Altium Designer</li>
-<li>Language: English(IELTS 6.5), Chinese(Native)</li></ul>
+<li><strong>Programming</strong>: Verilog, SystemVerilog, C, Python
+<li><strong>Digital ASIC Implementation</strong>: Basic Full RTL-to-GDSII flow; Synopsys DC/DFT, Cadence Xcelium/Innovus/Virtuoso; AMS 0.35µm/TSMC 180nm PDK; SDC constraints; post-layout simulation</li>
+<li><strong>FPGA & Simulation</strong>: Quartus, ModelSim, MATLAB</li>
+<li><strong>PCB / Embedded</strong>: Altium Designer</li>
+<li><strong>Language</strong>: English(IELTS 6.5), Chinese(Native)</li></ul>
 </section>
 
 </div></div></body></html>
