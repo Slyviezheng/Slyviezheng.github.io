@@ -58,8 +58,7 @@ hr {border: none; border-top: 1px solid #000; margin:6px 0 26px 0;} h2 { font-si
     <a href="#About Me">About Me</a> 
     <a href="#Education">Education</a> 
     <a href="#Publications">Publications</a> 
-    <a href="#Research Experiences">Research Experiences</a> 
-    <a href="#Projects">Projects</a> 
+    <a href="#Research and Projects">Projects</a> 
     <a href="#Skills">Skills</a> 
 </nav>
 
@@ -101,26 +100,34 @@ hr {border: none; border-top: 1px solid #000; margin:6px 0 26px 0;} h2 { font-si
 <div class="pub-item"><div class="img-wrapper"><img src="iscas.png" class="pub-img" alt="ISCAS paper"><div class="img-tag">ISCAS 2026</div></div>
 <div class="pub-text">
     <p class="pub-title"><em>A Unified Function Processor with Integer Arithmetic Based on Piecewise Chebyshev Polynomial Approximation</em></p>
-    <p class="pub-authors"><span class="underline">X. Zheng</span>, Z. Guo, and C. Zhou#. (#Corresponding Author)</p>
+    <p class="pub-authors"><span class="underline">X. Zheng</span>*, Z. Guo*, and C. Zhou#. (#Corresponding Author)</p>
     <p class="pub-venue">IEEE International Symposium on Circuits and Systems (ISCAS) (Accepted)</p>
     <details class="pub-abs"><summary>Abstract</summary><p>Nonlinear functions are fundamental components in widely applied AI algorithms. However, their hardware implementation presents a major challenge due to the diversity of function types and the full precision requirement (e.g., FP32), which results in significant area and energy overheads. To overcome these issues, we present a Unified Function Processor (UFP) with integer arithmetic, capable of efficiently computing a wide range of nonlinear functions with high accuracy under integer constraints. First, we propose a dynamic programming segmentation algorithm within a third-degree Chebyshev polynomial framework that optimally partitions each function into eight integer-aligned segments to minimize global quantization error. Second, a unified three-stage pipelined hardware with computation element reuse is proposed. Implemented in TSMC 28-nm HPC technology and working at 1GHz, the proposed UFP achieves up to 93.6% reductions in area compared to the state-of-the-art works, with a 79% lower energy consumption. The architecture flexibly supports all mainstream functions in AI algorithms with configurable precision and range, offering a compact and scalable solution for AI acceleration hardware.</p></details></div></div>
+
+<div class="pub-item"><div class="img-wrapper"><img src="tcasi.png" class="pub-img" alt="ISCAS paper"><div class="img-tag">ISCAS 2026</div></div>
+<div class="pub-text">
+    <p class="pub-title"><em>Variable Bit-Width Unified Function Processor for AI Acceleration</em></p>
+    <p class="pub-authors"><span class="underline">C. Zhou#, X. Zheng</span>*, Z. Guo, etc.</p>
+    <p class="pub-venue">IEEE Transactions on Circuits and Systems I (TCAS-I) (in Preparation)</p>
+
+<div class="pub-item"><div class="img-wrapper"><img src="tcasii.png" class="pub-img" alt="ISCAS paper"><div class="img-tag">ISCAS 2026</div></div>
+<div class="pub-text">
+    <p class="pub-title"><em>Variable Bit-Width Unified Function Processor for AI Acceleration</em></p>
+    <p class="pub-authors"><span class="underline">X. Zheng</span>*, K. Yu*, and C. Zhou#.</p>
+    <p class="pub-venue">IEEE Transactions on Circuits and Systems I (TCAS-I) (in Preparation)</p>
 </section>
 
-<hr><section id="Research Experiences"><div class="section-title"><span class="section-icon">🧠</span><h2>Research Experiences</h2></div>
-
-<div class="proj-item"><div class="proj-header"><div><strong>A Unified Function Processor with Integer Arithmetic Based on Piecewise Chebyshev Polynomial </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 07/2025-Present </div> </div>
-<ul><li>Proposed the Quantization-Aware Polynomial Approximation Algorithm (QADP) based on Chebyshev. Built a configurable Python toolchain for design-space exploration and error-resource trade-off analysis.</li></ul></div>
-
-<div class="proj-item"><div class="proj-header"><div><strong>Voxel-based Point Cloud Processing for Hardware Acceleration </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 09/2024-Present </div> </div>
-<ul><li>Designed a point cloud sampling and neighbor-search algorithm based on voxel partitioning, which reduced explicit distance computations by leveraging voxel index mapping.</li></ul></div>
-</section>
-
-<hr><section id="Projects"><div class="section-title"><span class="section-icon">🚀</span><h2>Projects</h2></div>
+<hr><section id="Research and Projects"><div class="section-title"><span class="section-icon">🚀</span><h2>Projects</h2></div>
 <div class="proj-item"><div class="proj-header"><div><strong>Volans LLM Chip</strong><br> NPU Subsystem Microarchitecture Co-designer and Developer &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date">Feb 2026-Present </div> </div>
 <ul><li>Co-designed the microarchitecture of a research-oriented LLM accelerator with stage-level functional partitioning and implementing modules at RTL level.</li> </ul></div>
 
 <div class="proj-item"><div class="proj-header"><div><strong>Fornax Diffusion Chip</strong><br> OCI Module Developer, UFP Module Co-developer &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date">12/2025-Present </div> </div>
+<ul><li>Proposed the Quantization-Aware Polynomial Approximation Algorithm (QADP) based on Chebyshev. Built a configurable Python toolchain for design-space exploration and error-resource trade-off analysis.</li></ul></div>
 <ul><li>Designed the OCI (output reversely compresses input) module, including module-level instruction registers configuration, micro architecture design, dataflow, and RTL implementation, covering AXI transactions, address generation, data reorganization and scheduling. Completed module-level simulation and functional verification, and finally integrated it to SoC.</li> </ul></div>
+
+<div class="proj-item"><div class="proj-header"><div><strong>Voxel-based Point Cloud Processing for Hardware Acceleration </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 09/2024-Present </div> </div>
+<ul><li>Designed a point cloud sampling and neighbor-search algorithm based on voxel partitioning, which reduced explicit distance computations by leveraging voxel index mapping.</li></ul></div>
+</section>
 
 <div class="proj-item"><div class="proj-header"><div><strong>Intelligent Control and Application of Landscape Lighting in Complex Environments  </strong><br> Team Member of Controller Part </div> <div class="proj-date">10/2024-06/2025</div></div>
 <ul><li>Developed a dynamic audio-responsive lighting control system based on feature extraction and adaptive control algorithms base on Modbus protocol, ADC acquisition, and RS485 communication on STM32 platform. Deployed in the 2025 Harbin Ice and Snow World.</li> </ul></div>
