@@ -39,7 +39,7 @@ a { text-decoration: none; }
 .proj-item:last-child{border-bottom:none;}
 .top-nav{position:sticky;top:0;background:white;padding:18px 0;display:flex;justify-content:center;gap:60px;border-bottom:1px solid #eee;z-index:100;}
 .top-nav a{text-decoration:none;font-size:22px;color:#666;}
-.top-nav a:hover
+.top-nav a:hover{color: #000;}
 .underline {text-decoration: underline;}
 li {margin-bottom: 1px;}
 @media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; padding-right: 0; margin-bottom: 24px; } .sidebar-top { display: flex; gap: 16px; align-items: center; } .avatar { width: 96px; height: 96px; margin-bottom: 0; }} 
@@ -100,9 +100,12 @@ hr { border: none; border-top: 1px solid #cccccc; margin: 24px 0; } h2 { font-si
 </section>
 
 <hr><section id="Research Experiences"><h2>Research Experiences</h2>
+
+<div class="proj-item"><div class="proj-header"><div><strong>A Unified Function Processor with Integer Arithmetic Based on Piecewise Chebyshev Polynomial </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 07/2025-Present </div> </div>
+<ul><li>Proposed the Quantization-Aware Polynomial Approximation Algorithm (QADP) based on Chebyshev. Built a configurable Python toolchain for design-space exploration and error-resource trade-off analysis.</li></ul></div>
+
 <div class="proj-item"><div class="proj-header"><div><strong>Voxel-based Point Cloud Processing for Hardware Acceleration </strong><br> Team Leader &nbsp;&nbsp; | &nbsp;&nbsp; Supervised by Dr. Changchun Zhou</div> <div class="proj-date"> 09/2024-Present </div> </div>
-<ul><li>Designed a point cloud sampling and neighbor-search algorithm based on voxel partitioning, replacing traditional FPS/KNN distance calculations with voxel index lookups.</li> 
-    <li>Reduced explicit distance computations by leveraging voxel index mapping.</li></ul></div>
+<ul><li>Designed a point cloud sampling and neighbor-search algorithm based on voxel partitioning, which reduced explicit distance computations by leveraging voxel index mapping.</li></ul></div>
 </section>
 
 <hr><section id="Projects"><h2>Projects</h2> 
